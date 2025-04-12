@@ -1,0 +1,410 @@
+.contact-container,
+.info-container {
+    max-width: 1200px;
+    min-width: 900px;
+    top: 130px
+}
+
+.contact-container,
+.info-container {
+    position: relative;
+    display: flex
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root {
+    --heading-font: 'Playfair Display', serif;
+    --text-font: 'Lora', serif;
+    --background-color: #e5f8e5;
+    --primary-color: #A8D5BA;
+    --accent-color: #A7C7E7;
+    --heading-color: #2C6E49;
+    --text-color: #4A4A4A;
+    --button-color: #6CA6C1;
+    --button-hover: #4F91B8;
+    --border-color: #DCEAE3;
+    --text-white: #fff
+}
+
+body,
+html {
+    scroll-behavior: smooth
+}
+
+.info-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    border-radius: 15px;
+    border: 3px solid #6ca6c1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+    margin: 30px auto
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .1)
+}
+
+.profile-container img {
+    width: 250px;
+    border-radius: 10px;
+    margin-right: 20px
+}
+
+.profile-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: var(--heading-font);
+    color: var(--heading-color)
+}
+
+.profile-text p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-family: var(--text-font)
+}
+
+.specialization {
+    padding: 20px
+}
+
+.specialization h2 {
+    color: var(--heading-color);
+    font-family: var(--heading-font)
+}
+
+.specialization p,
+.specialization ul {
+    padding: 10px;
+    color: var(--text-color);
+    font-family: var(--text-font)
+}
+
+.specialization ul {
+    list-style: none
+}
+
+.contact-container {
+    margin: 50px auto;
+    background: var(--background-color);
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    gap: 30px
+}
+
+@media (min-width:1200px) {
+
+    .contact-container,
+    .info-container {
+        max-width: 1200px
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    .contact-container,
+    .info-container {
+        max-width: 1000px
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .contact-container,
+    .info-container {
+        max-width: 90%;
+        min-width: auto;
+        flex-direction: column
+    }
+
+    .profile-container {
+        flex-direction: column;
+        text-align: center
+    }
+
+    .profile-container img {
+        margin-right: 0;
+        margin-bottom: 15px
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+
+    .contact-container,
+    .info-container {
+        max-width: 95%;
+        min-width: auto;
+        flex-direction: column
+    }
+
+    .profile-container {
+        flex-direction: column;
+        text-align: center
+    }
+
+    .profile-container img {
+        width: 200px;
+        margin-right: 0
+    }
+
+    .profile-text h1 {
+        font-size: 28px
+    }
+
+    .profile-text p {
+        font-size: 16px
+    }
+}
+
+@media (max-width:575px) {
+
+    .contact-container,
+    .info-container {
+        width: 90%;
+        min-width: auto;
+        flex-direction: column;
+        padding: 20px
+    }
+
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px
+    }
+
+    .profile-container img {
+        width: 180px;
+        margin-right: 0
+    }
+
+    .profile-text h1 {
+        font-size: 24px
+    }
+
+    .profile-text p {
+        font-size: 14px
+    }
+
+    .specialization h2 {
+        font-size: 22px
+    }
+
+    .specialization p,
+    .specialization ul {
+        font-size: 14px;
+        padding: 5px
+    }
+}
+
+.contact-form {
+    flex: 2
+}
+
+.contact-form h2 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    font-size: 36px;
+    margin-bottom: 20px
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column
+}
+
+.contact-form label {
+    color: var(--text-color);
+    font-family: var(--haeding-font);
+    font-weight: 700;
+    margin-top: 10px
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    color: var(--text-color);
+    font-family: var(--text-font);
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none
+}
+
+.contact-form button {
+    background-color: var(--button-color);
+    color: #fff;
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s
+}
+
+.contact-form button:hover {
+    background-color: var(--button-hover)
+}
+
+.contact-info {
+    flex: 1;
+    font-size: 14px;
+    color: var(--text-color);
+    font-family: var(--text-font)
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px
+}
+.e-b01{
+    display: block;
+}
+
+.contact-info i {
+    color: var(--button-color);
+    font-size: 18px
+}
+
+@media screen and (max-width:380px) {
+    .contact-form h2 {
+        font-size: 28px
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        font-size: 12px;
+        padding: 8px
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 10px
+    }
+
+    .contact-info {
+        font-size: 10px;
+        padding: 10px
+    }
+
+    .contact-info i {
+        font-size: 14px
+    }
+
+    .contact-info .para {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px
+    }
+}
+
+.connected p,
+.contact-details .con-p {
+    padding-top: 10px
+}
+
+@media (max-width: 480px) {
+
+    .contact-container,
+    .info-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .profile-container img {
+        width: 160px;
+    }
+
+    .profile-text h1 {
+        font-size: 22px;
+    }
+
+    .profile-text p {
+        font-size: 13px;
+    }
+
+    .specialization h2 {
+        font-size: 20px;
+    }
+
+    .specialization p,
+    .specialization ul {
+        font-size: 13px;
+    }
+
+    .contact-form h2 {
+        font-size: 26px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-info {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 390px) {
+    .e-b01 { 
+        display: none !important; 
+    }
+    .contact-form h2 {
+        font-size: 22px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .contact-form button {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .contact-info {
+        font-size: 10px;
+    }
+
+}
