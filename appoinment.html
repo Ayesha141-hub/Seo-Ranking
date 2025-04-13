@@ -4,15 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Book an appointment with Zara Therapy Clinic. Schedule your session with expert therapists online.">
-    <meta name="keywords"
-        content="book therapy session, schedule therapist, online therapy appointment, mental health booking">
+    <!-- Enhanced Meta Tags -->
+    <meta name="description" content="Book professional therapy sessions online with Zara Therapy Clinic. Schedule appointments with licensed therapists for mental health counseling, CBT, EMDR, and couples therapy.">
+    <meta name="keywords" content="book therapy session, online counseling appointment, mental health booking, schedule therapist, psychotherapy appointment, depression counseling, anxiety treatment, couples therapy, hypnotherapy session">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.zaratherapyclinic.com/appointment" />
+    
+    <!-- OG Tags for Social Sharing -->
+    <meta property="og:title" content="Book Therapy Appointment | Zara Therapy Clinic">
+    <meta property="og:description" content="Schedule your mental health counseling session with our licensed therapists. Online and in-person appointments available.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zaratherapyclinic.com/appointment">
+    <meta property="og:image" content="https://www.zaratherapyclinic.com/Images/Zara-Logo.png">
+    <meta property="og:site_name" content="Zara Therapy Clinic">
 
     <!----------------------Google fonts link------------------------>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <!----------------------Font awesome icons link------------------------>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -28,8 +36,84 @@
     <!----------------------Website's Icon------------------------>
     <link rel="icon" href="Images/Zara-Logo.png">
     <!----------------------Websites's Title------------------------>
-    <title>Zara Therapy Clinic</title>
+    <title> Zara Therapy Clinic </title>
 
+    <!-- Schema Markup for Booking Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Zara Therapy Clinic",
+      "description": "Professional mental health counseling and therapy services",
+      "image": "https://www.zaratherapyclinic.com/Images/Zara-Logo.png",
+      "@id": "https://www.zaratherapyclinic.com",
+      "url": "https://www.zaratherapyclinic.com/appointment",
+      "telephone": "+1234567890",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Therapy Street",
+        "addressLocality": "City",
+        "addressRegion": "State",
+        "postalCode": "12345",
+        "addressCountry": "Country"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Therapy Services",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Individual Therapy",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "CBT Therapy Session",
+                  "description": "Cognitive Behavioral Therapy session with licensed therapist"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "EMDR Therapy",
+                  "description": "Eye Movement Desensitization and Reprocessing therapy"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Couples Therapy",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Marriage Counseling",
+                  "description": "Professional counseling for couples"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -39,67 +123,74 @@
     <div id="preloader">
         <div class="loader"></div>
     </div>
-    <!----------------------Header start------------------------>
-    <header>
+       <!---------------------- Header ------------------------>
+       <header role="banner">
         <div class="headers">
             <div class="head-logo">
-                <a href="index.html" ><img src="Images/Zara-Logo.png" alt="ZTC-logo"></a>
-                <span id="brand_name"></span>
+                <a href="index.html" aria-label="Zara Therapy Clinic Home">
+                    <img src="Images/Zara-Logo.png" alt="Zara Therapy Clinic Logo - Professional Mental Health Services">
+                </a>
+                <span id="brand_name" aria-hidden="true"></span>
             </div>
             <div class="head-search">
-                <input class="inp-search" type="text" placeholder="Search">
+                <label for="site-search" class="visually-hidden">Search therapy services</label>
+                <input class="inp-search" id="site-search" type="search" placeholder="Search therapy services...">
                 <div class="s-icon">
-                    <button class="search-btn"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="search-btn" aria-label="Search"> 
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </header>
-    <!----------------------Nav-bar start------------------------>
-    <nav>
-        <div class="nav-bar">
-            <div class="navlink">
-                <ul class="nav-linkss ps-0 m-0">
-                    <li><a class="hov" href="index.html" >Home</a></li>
-                    <li><a class="hov" href="about.html" >About</a></li>
-
-                    <!---------Product dropdown-------->
-                    <li class="dropdown1">
-                        <a class="hov" href="products.html" >Products</a>
-                        <ul class="dropdown-menu1">
-                            <li><a href="products.html#journals" >Journals</a></li>
-                            <li><a href="products.html#relaxation" >Relaxation</a></li>
-                            <li><a href="products.html#resources" >Resources</a></li>
-                        </ul>
-                    </li>
-                    <!---------Services dropdown-------->
-                    <li class="dropdown1">
-                        <a class="hov" href="service.html" >Services</a>
-                        <ul class="dropdown-menu1">
-                            <li><a href="service.html#family-counseling" >Family</a></li>
-                            <li><a href="service.html#couple-counseling" >Couple</a></li>
-                            <li><a href="service.html#teen-counseling" >Youth</a></li>
-                        </ul>
-                    </li>
-                    <li class="hov-hide01"><a class="hov" href="discountandoffers.html" >Offers and
-                            Discounts</a></li>
-                    <li class="hov-hide01"><a class="hov" href="contact.html" >Contact Us</a></li>
-                    <li class="hov-hide02"><a href="discountandoffers.html" >Best offer</a></li>
-                    <li class="hov-hide02"><a href="contact.html" >Reach Out</a></li>
-                </ul>
-                <!---------Appoinment button-------->
-                <div class="apt-btn">
-                    <button><a href="#">Appoinment</a></button>
-                </div>
+    
+    <!---------------------- Navigation ------------------------>
+    <nav class="nav-bar" role="navigation" aria-label="Main navigation">
+        <div class="navlink">
+            <ul class="nav-linkss ps-0 m-0">
+                <li><a class="hov" href="index.html" aria-current="page">Home</a></li>
+                <li><a class="hov" href="about.html">About</a></li>
+                
+                <!--------- Products Dropdown -------->
+                <li class="dropdown1">
+                    <a class="hov" href="products.html">Products</a>
+                    <ul class="dropdown-menu1">
+                        <li><a href="products.html#journals">Therapy Journals</a></li>
+                        <li><a href="products.html#relaxation">Relaxation Tools</a></li>
+                        <li><a href="products.html#resources">Mental Health Resources</a></li>
+                    </ul>
+                </li>
+                
+                <!--------- Services Dropdown -------->
+                <li class="dropdown1">
+                    <a class="hov" href="service.html">Services</a>
+                    <ul class="dropdown-menu1">
+                        <li><a href="service.html#family-counseling">Family Therapy</a></li>
+                        <li><a href="service.html#couple-counseling">Couples Counseling</a></li>
+                        <li><a href="service.html#teen-counseling">Youth Therapy</a></li>
+                    </ul>
+                </li>
+                
+                <li class="hov-hide01"><a class="hov" href="discountandoffers.html">Special Offers</a></li>
+                <li class="hov-hide01"><a class="hov" href="contact.html">Contact Us</a></li>
+                <li class="hov-hide02"><a href="discountandoffers.html">Best Offers</a></li>
+                <li class="hov-hide02"><a href="contact.html">Reach Out</a></li>
+            </ul>
+            
+            <!--------- Appointment Button -------->
+            <div class="apt-btn">
+                <button aria-label="Book Therapy Appointment">
+                    <a href="#">Appointment</a>
+                </button>
             </div>
-            <button class="menu-toggle"><i class="fa fa-bars"></i></button>
         </div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu"><i class="fa fa-bars"></i></button>
     </nav>
     <!----------------------Nav bar complete------------------------>
 
     <div class="appt-intro" data-aos="fade-up">
-        <h2 class="heading">Schedule Your Therapy Session</h2>
-        <p>Your mental well-being matters. Take the first step toward healing with our professional therapy services.
-            Book an appointment today and experience a safe, supportive, and confidential space to grow and thrive.</p>
+        <h1 class="heading" itemprop="name">Schedule Your Therapy Session</h1>
+        <p itemprop="description">Your mental well-being matters. Take the first step toward healing with our professional therapy services. Book an appointment today and experience a safe, supportive, and confidential space to grow and thrive.</p>
     </div>
     <section class="form" data-aos="fade-up">
         <div class="form-container">
@@ -122,26 +213,32 @@
                 Appointment date
                 <br>
                 <input type="date">
+                
                 <br>
-                Select a therapist
-                <br>
-                <select name="select a therapist" id="">
-                    <option value="Dr.Ahmed Khan">Dr.Ahmed Khan</option>
-                    <option value="Dr.Ayesha Butt">Dr.Ayesha Butt</option>
-                    <option value="Dr.Umer Farooq">Dr.Umer Farooq</option>
-                    <option value="Dr.Amina Tariq">Dr.Amina Tariq</option>
-                    <option value="Dr.Sana Javed">Dr.Sana Javed</option>
-                </select>
-                <br>
-                Types of session
-                <br>
-                <select name="types of session" id="">
-                    <option value="Hypnotherapist">Hypnotherapist</option>
-                    <option value="Couples and Marriage Therapy">Couples and Marriage Therapy </option>
-                    <option value="CBT Therapy">CBT Therapy</option>
-                    <option value="EMDR Therapy">EMDR Therapy</option>
-                    <option value="Online Session">Online Session</option>
-                </select>
+                <div class="form-group">
+                    <label for="therapist">Select a therapist</label><br>
+                    <select id="therapist" name="therapist" aria-label="Select therapist" required>
+                        <option value="" disabled selected>Choose your therapist</option>
+                        <option value="Dr.Ahmed Khan">Dr. Ahmed Khan (Clinical Psychologist)</option>
+                        <option value="Dr.Ayesha Butt">Dr. Ayesha Butt (Marriage & Family Therapist)</option>
+                        <option value="Dr.Umer Farooq">Dr. Umer Farooq (Trauma Specialist)</option>
+                        <option value="Dr.Amina Tariq">Dr. Amina Tariq (Child & Adolescent Therapist)</option>
+                        <option value="Dr.Sana Javed">Dr. Sana Javed (Cognitive Behavioral Therapist)</option>
+                    </select>
+                </div>
+                <br> 
+                <div class="form-group">
+                    <label for="sessionType">Type of session</label>
+                    <br>
+                    <select id="sessionType" name="sessionType" aria-label="Type of therapy session" required>
+                        <option value="" disabled selected>Select therapy type</option>
+                        <option value="Hypnotherapist">Hypnotherapy Session</option>
+                        <option value="Couples and Marriage Therapy">Couples and Marriage Therapy</option>
+                        <option value="CBT Therapy">Cognitive Behavioral Therapy (CBT)</option>
+                        <option value="EMDR Therapy">EMDR Trauma Therapy</option>
+                        <option value="Online Session">Online Therapy Session</option>
+                    </select>
+                </div>
                 <br>
                 <div class="form-submit">
                     <button type="submit" class="submit-button">Submit</button>
@@ -153,10 +250,10 @@
     </section>
     <section class="pdf">
         <div class="pdf-container container">
-            <h3 class="heading">Instant Appointment Slip</h3>              
-            <p>"Generate Appointment Slip" – Click this button to instantly download your appointment slip in PDF format, including patient name, date, time, and service details. You can use this slip for your clinic visit or save it for future reference.</p>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#appointmentModal">
-                Download Your Slip
+            <h2 class="heading">Instant Appointment Confirmation</h2>              
+            <p>After booking, generate your official appointment slip with all session details. This PDF includes your therapist's name, appointment time, and service type for your records and clinic visit.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#appointmentModal" aria-label="Generate appointment slip">
+                Generate Appointment Slip
             </button>
         </div>
         <!-- Modal -->
@@ -178,13 +275,24 @@
   
             <label>Time:</label>
             <input type="time" id="appointmentTime" class="form-control shadow-none" required><br>
-  
-            <label>Service:</label>
-            <select id="serviceType" class="form-control shadow-none">
-                <option value="Therapy Session">Therapy Session</option>
-                <option value="Mental Health Counseling">Mental Health Counseling</option>
-                <option value="Stress Management">Stress Management</option>
+            <label>Doctors-list:</label>
+            <select id="therapist" name="therapist" aria-label="Select therapist" required>
+                <option value="" disabled selected>Choose your therapist</option>
+                <option value="Dr.Ahmed Khan">Dr. Ahmed Khan (Clinical Psychologist)</option>
+                <option value="Dr.Ayesha Butt">Dr. Ayesha Butt (Marriage & Family Therapist)</option>
+                <option value="Dr.Umer Farooq">Dr. Umer Farooq (Trauma Specialist)</option>
+                <option value="Dr.Amina Tariq">Dr. Amina Tariq (Child & Adolescent Therapist)</option>
+                <option value="Dr.Sana Javed">Dr. Sana Javed (Cognitive Behavioral Therapist)</option>
             </select><br>
+            <label>Service:</label>
+            <select id="sessionType" name="sessionType" aria-label="Type of therapy session" required>
+                <option value="" disabled selected>Select therapy type</option>
+                <option value="Hypnotherapist">Hypnotherapy Session</option>
+                <option value="Couples and Marriage Therapy">Couples and Marriage Therapy</option>
+                <option value="CBT Therapy">Cognitive Behavioral Therapy (CBT)</option>
+                <option value="EMDR Therapy">EMDR Trauma Therapy</option>
+                <option value="Online Session">Online Therapy Session</option>
+            </select><br><br>
   
             <button type="button" id="generateSlip" class="btn btn-success">Download Appointment Slip</button>
           </form>
@@ -200,84 +308,95 @@
             <p>Need help with booking? call us at [123-456-789] or email us at [appointments@zaratherapy.com]</p>
         </div>
     </div>
-    <section class="faq-section" data-aos="fade-up">
+    <section class="faq-section" data-aos="fade-up" itemscope itemtype="https://schema.org/FAQPage">
         <div class="container my-5 text-center d-flex flex-column align-items-center">
-            <h2 class="heading">Frequently Asked Questions</h2>
+            <h2 class="heading">Therapy Appointment FAQs</h2>
 
             <div class="accordion w-75" id="faqAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq1">
+                            data-bs-target="#faq1" itemprop="name">
                             1. How do I cancel or reschedule my appointment?
                         </button>
-                    </h2>
-                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            You can reschedule or cancel your session by contacting us at least 24 hours before your
-                            appointment.
+                    </h3>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="accordion-body" itemprop="text">
+                            You can reschedule or cancel your therapy session by contacting us at least 24 hours before your appointment time. This allows us to offer the slot to other clients needing support. For cancellations, please call our office or email <a href="mailto:appointments@zaratherapy.com">appointments@zaratherapy.com</a> with your name and appointment details.
                         </div>
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq2">
+                            data-bs-target="#faq2" itemprop="name">
                             2. Are the therapy sessions confidential?
                         </button>
-                    </h2>
-                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Yes, all sessions are strictly confidential and follow professional ethical guidelines.
+                    </h3>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="accordion-body" itemprop="text">
+                            Yes, all therapy sessions at Zara Therapy Clinic are strictly confidential and follow professional ethical guidelines. Your personal information and session content are protected under therapist-client privilege, with exceptions only as required by law (such as risk of harm to self or others). We comply with all HIPAA regulations to ensure your privacy.
                         </div>
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq3">
+                            data-bs-target="#faq3" itemprop="name">
                             3. Do you offer online therapy sessions?
                         </button>
-                    </h2>
-                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Yes, we offer virtual consultations. Select 'Online Therapy' while booking your appointment.
+                    </h3>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="accordion-body" itemprop="text">
+                            Yes, we offer secure virtual therapy sessions through our HIPAA-compliant telehealth platform. When booking, select 'Online Session' as your session type. You'll receive a secure link prior to your appointment. Our online therapy services are available for individuals, couples, and families, with the same quality of care as in-person sessions.
                         </div>
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq4">
+                            data-bs-target="#faq4" itemprop="name">
                             4. What should I bring to my first appointment?
                         </button>
-                    </h2>
-                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            For your initial session, bring any relevant documents such as previous therapy or medical
-                            reports.
+                    </h3>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="accordion-body" itemprop="text">
+                            For your initial therapy session, we recommend bringing:
+                            <ul>
+                                <li>Completed intake forms (emailed after booking)</li>
+                                <li>Insurance card (if using insurance)</li>
+                                <li>List of current medications</li>
+                                <li>Previous therapy or medical records (if relevant)</li>
+                                <li>Notebook for personal reflections</li>
+                            </ul>
+                            Most importantly, bring an open mind and willingness to engage in the therapeutic process.
                         </div>
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq5">
+                            data-bs-target="#faq5" itemprop="name">
                             5. How long is each therapy session?
                         </button>
-                    </h2>
-                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Standard individual therapy sessions typically last 50 minutes to one hour. The duration may
-                            vary depending on the type of therapy or treatment plan established.
+                    </h3>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="accordion-body" itemprop="text">
+                            Standard individual therapy sessions typically last 50 minutes to one hour. The duration may vary depending on the type of therapy:
+                            <ul>
+                                <li><strong>Initial assessment:</strong> 60-90 minutes</li>
+                                <li><strong>Individual therapy:</strong> 50-60 minutes</li>
+                                <li><strong>Couples/family therapy:</strong> 60-75 minutes</li>
+                                <li><strong>EMDR sessions:</strong> 60-90 minutes</li>
+                            </ul>
+                            Your therapist will discuss the recommended session length based on your treatment plan.
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -285,61 +404,60 @@
 
     <section class="cta-section" data-aos="fade-up">
         <div class="container text-center">
-            <h2 class="heading">Ready to Take the Next Step?</h2>
-            <p class="cta-text">Schedule your appointment now and secure your spot with our expert therapists.</p>
+            <h2 class="heading">Begin Your Healing Journey Today</h2>
+            <p class="cta-text">Take the first step toward emotional well-being with our expert therapists. Flexible scheduling options available.</p>
 
             <div class="cta-buttons">
-                <a href="#" class="cta-button"><i class="fas fa-calendar-check"></i> Book Your Appointment</a>
-                <a href="contact.html" class="call-button" >
-                    <i class="fa-solid fa-phone"></i> Call Now
+                <a href="#" class="cta-button" aria-label="Book therapy appointment"><i class="fas fa-calendar-check"></i> Book Your Appointment</a>
+                <a href="tel:123456789" class="call-button" aria-label="Call for appointment">
+                    <i class="fa-solid fa-phone"></i> Call Now: 123-456-789
                 </a>
             </div>
         </div>
     </section>
 
     <!----------------------Footer start------------------------>
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-container">
             <div class="foot">
                 <div class="footer-logo">
-                    <img src="Images/Zara-Logo.png" alt="footer logo">
-                    <p>We provide professional therapy services to help you achieve mental well-being.</p>
-                    <p><strong>Our Approach:</strong> Holistic & Evidence-Based Therapy</p>
-
+                    <img src="Images/Zara-Logo.png" alt="Zara Therapy Clinic Logo - Professional Mental Health Services">
+                    <p>We provide professional therapy and counseling services to help you achieve mental well-being and emotional health.</p>
+                    <p><strong>Our Approach:</strong>Holistic & Evidence-Based, Client-Centered Therapy</p>
                 </div>
+                
                 <div class="useful-links">
-                    <h2>Useful-links</h2>
+                    <h3 class="h4">Therapy Resources</h3>
                     <ul class="ps-0">
-                        <li><a href="OtherPages/blog.html" >Blogs</a></li>
-                        <li><a href="OtherPages/Termsandcondition.html" >Terms and conditions</a></li>
-                        <li><a href="OtherPages/fees.html" >Fees</a></li>
-                        <li><a href="OtherPages/privacypolicy.html" >Privacy policy</a></li>
-                        <li><a href="OtherPages/FAQ.html" >FAQ's</a></li>
+                        <li><a href="OtherPages/blog.html">Mental Health Blog</a></li>
+                        <li><a href="OtherPages/Termsandcondition.html">Terms and Conditions</a></li>
+                        <li><a href="OtherPages/fees.html">Therapy Fees</a></li>
+                        <li><a href="OtherPages/privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="OtherPages/FAQ.html">Therapy FAQs</a></li>
                     </ul>
                 </div>
 
                 <div class="contact-details">
-                    <h2>Contact Us</h2>
-                    <p class="con-p"><strong>Phone:</strong> +123 456 7890</p>
-                    <p><strong>Email:</strong> contact@zaratherapy.com</p>
-                    <p><strong>Location:</strong> 123 Therapy Street, City</p>
+                    <h3 class="h4">Clinic Info</h3>
+                    <p><strong>Phone:</strong>+123 456 7890</a></p>
+                    <p><strong>Email:</strong>contact@zaratherapy.com</a></p>
+                    <p><strong>Location:</strong> 123 Therapy Street, Pakistan</p>
+                    <p><strong>Hours:</strong> Mon-Fri: 9am-7pm, Sat: 10am-4pm</p>
+                    
                     <div class="social-link">
+                        <h4 class="h5">Join Our Community</h4>
                         <ul class="ps-0">
-                            <li><a href="https://www.facebook.com/" target="_blank"><i
-                                        class="fa-brands fa-facebook"></i></a>
-                            </li>
-                            <li><a href="https://www.instagram.com/" target="_blank" ><i
-                                        class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="https://telegram.me/yourusername" target="_blank"><i
-                                        class="fa-brands fa-telegram"></i></a></li>
-                            <li><a href="https://www.twitter.com/" target="_blank"><i
-                                        class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://telegram.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a></li>
+                            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
+                
                 <div class="connected">
-                    <h2>Stay connected</h2>
-                    <p>Subscribe to our newsletter for updates</p>
+                    <h3 class="h4">Stay Connected</h3>
+                    <p>Subscribe to our mental health newsletter for therapy tips and updates</p>
                     <div class="foot-input">
                         <input type="email" class="f-email" placeholder="Enter your email here">
                         <input type="submit" class="f-submit">
@@ -349,10 +467,10 @@
                                 Us</a></button>
                     </div>
                 </div>
-
             </div>
+            
             <div class="footer-botm">
-                <p>&copy; 2025 <strong> Zara Therapy Clinic.</strong> All rights reserved.</p>
+                <p>&copy; 2025 <strong>Zara Therapy Clinic.</strong> All rights reserved. | <a href="OtherPages/privacypolicy.html" class="text-decoration-none text-secondary">Privacy Policy</a> | <a href="OtherPages/Termsandcondition.html" class="text-decoration-none text-secondary">Terms of Service</a></p>
             </div>
         </div>
     </footer>

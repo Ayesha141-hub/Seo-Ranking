@@ -4,365 +4,408 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Explore high-quality mental health & wellness products at Zara Therapy Clinic. Find relaxation tools, therapy journals, and self-care essentials.">
-    <meta name="keywords"
-        content="therapy products, mental health tools, self-care items, relaxation accessories, wellness store">
+    <!-- Enhanced Meta Tags -->
+    <meta name="description" content="Premium mental health products at Zara Therapy Clinic - therapy journals, relaxation tools, and self-care essentials for emotional wellness and stress relief.">
+    <meta name="keywords" content="therapy products, mental health tools, self-care items, relaxation accessories, wellness products, therapy journals, stress relief tools, mindfulness products">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.zaratherapyclinic.com/products" />
+    
+    <!-- OG Tags for Social Sharing -->
+    <meta property="og:title" content="Mental Health Products | Zara Therapy Clinic">
+    <meta property="og:description" content="Discover our expert-curated therapy products including journals, relaxation tools, and self-care essentials for emotional wellness.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zaratherapyclinic.com/products">
+    <meta property="og:image" content="https://www.zaratherapyclinic.com/Images/Zara-Logo.png">
+    <meta property="og:site_name" content="Zara Therapy Clinic">
 
-    <!----------------------Font awesome icons link------------------------>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <!------------------- Bootstrap CSS ------------------->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- AOS LIBRARY CSS -->
+    <!-- AOS Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <!-- GOOGLE FONTS -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap"
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap"
         rel="stylesheet">
-    <!-- MY CSS -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="Css/responsive.css">
     <link rel="stylesheet" href="Css/products.css">
+    <!-- Favicon -->
     <link rel="icon" href="Images/Zara-Logo.png">
     <title>Zara Therapy Clinic</title>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Zara Therapy Clinic",
+      "image": "https://www.zaratherapyclinic.com/Images/Zara-Logo.png",
+      "@id": "https://www.zaratherapyclinic.com",
+      "url": "https://www.zaratherapyclinic.com/products",
+      "telephone": "+1234567890",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Therapy Street",
+        "addressLocality": "City",
+        "addressRegion": "State",
+        "postalCode": "12345",
+        "addressCountry": "Country"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Mental Health Products",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Self-Help Journals",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Mental Wellness Planner",
+                  "description": "Daily planner for emotional well-being"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Relaxation Products",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Weighted Blanket",
+                  "description": "15 lb blanket for anxiety relief"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 
 <body>
-    <!-- back to top button -->
-    <button id="back-to-top" title="Go to top">↑</button>
-    <!--preloader -->
+    <!-- Back to top button -->
+    <button id="back-to-top" title="Go to top" aria-label="Back to top">↑</button>
+    
+    <!-- Preloader -->
     <div id="preloader">
         <div class="loader"></div>
     </div>
-    <!----------------------Header start------------------------>
+    
+    <!---------------------- Header ------------------------>
     <header>
         <div class="headers">
             <div class="head-logo">
-                <a href="index.html" ><img src="Images/Zara-Logo.png" alt="ZTC-logo"></a>
+                <a href="index.html" aria-label="Zara Therapy Clinic Home"><img src="Images/Zara-Logo.png" alt="Zara Therapy Clinic Logo"></a>
                 <span id="brand_name"></span>
             </div>
             <div class="head-search">
-                <input class="inp-search" type="text" placeholder="Search">
+                <input class="inp-search" type="text" placeholder="Search therapy services..." aria-label="Search therapy products">
                 <div class="s-icon">
-                    <button class="search-btn"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="search-btn" aria-label="Search products"> <i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
         </div>
     </header>
-    <!----------------------Nav-bar start------------------------>
-    <nav>
+    
+    <!---------------------- Navigation ------------------------>
+    <nav aria-label="Main navigation">
         <div class="nav-bar">
             <div class="navlink">
                 <ul class="nav-linkss ps-0 m-0">
-                    <li><a class="hov" href="index.html" >Home</a></li>
-                    <li><a class="hov" href="about.html" >About</a></li>
-                    <!---------Product dropdown-------->
+                    <li><a class="hov" href="index.html">Home</a></li>
+                    <li><a class="hov" href="about.html">About</a></li>
+                    
+                    <!--------- Products dropdown -------->
                     <li class="dropdown1">
-                        <a class="hov active" href="#">Products</a>
+                        <a class="hov active" href="#" aria-current="page">Products</a>
                         <ul class="dropdown-menu1">
-                            <li><a href="#journals">Journals</a></li>
-                            <li><a href="#relaxation">Relaxation</a></li>
-                            <li><a href="#resources">Resources</a></li>
+                            <li><a href="#journals">Therapy Journals</a></li>
+                            <li><a href="#relaxation">Relaxation Tools</a></li>
+                            <li><a href="#resources">Mental Health Resources</a></li>
                         </ul>
                     </li>
-                    <!---------Services dropdown-------->
+                    
+                    <!--------- Services dropdown -------->
                     <li class="dropdown1">
-                        <a class="hov" href="service.html" >Services</a>
+                        <a class="hov" href="service.html">Services</a>
                         <ul class="dropdown-menu1">
-                            <li><a href="service.html#family-counseling" >Family</a></li>
-                            <li><a href="service.html#couple-counseling" >Couple</a></li>
-                            <li><a href="service.html#teen-counseling" >Youth</a></li>
+                            <li><a href="service.html#family-counseling">Family Therapy</a></li>
+                            <li><a href="service.html#couple-counseling">Couples Counseling</a></li>
+                            <li><a href="service.html#teen-counseling">Youth Mental Health</a></li>
                         </ul>
                     </li>
-                    <li class="hov-hide01"><a class="hov" href="discountandoffers.html" >Offers and
-                            Discounts</a></li>
-                    <li class="hov-hide01"><a class="hov" href="contact.html" >Contact Us</a></li>
-                    <li class="hov-hide02"><a href="discountandoffers.html" >Best offer</a></li>
-                    <li class="hov-hide02"><a href="contact.html" >Reach Out</a></li>
+                    
+                    <li class="hov-hide01"><a class="hov" href="discountandoffers.html">Special Offers</a></li>
+                    <li class="hov-hide01"><a class="hov" href="contact.html">Contact Us</a></li>
+                    <li class="hov-hide02"><a href="discountandoffers.html">Best Offers</a></li>
+                    <li class="hov-hide02"><a href="contact.html">Reach Out</a></li>
                 </ul>
-                <!---------Appoinment button-------->
+                
+                <!--------- Appointment button -------->
                 <div class="apt-btn">
-                    <button><a href="appoinment.html" >Appoinment</a></button>
+                    <button aria-label="Book therapy appointment"><a href="appoinment.html">Appointment</a></button>
                 </div>
             </div>
-            <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+            <button class="menu-toggle" aria-label="Mobile menu"><i class="fa fa-bars"></i></button>
         </div>
     </nav>
-    <!----------------------Nav bar complete------------------------>
-    <!-- HEADLINE -->
-    <div class="engaging-headline" data-aos="fade-up">
-        <img src="Images/PRODUCT/Products.jpg" alt="Product" loading="lazy">
-        <h1 class="headline">Enhance Your Well-Being with Expert-Curated Therapy Products</h1>
-    </div>
 
+    <!---------------------- Main Content ------------------------>
+    <main>
+        <!-- Hero Banner -->
+        <section class="engaging-headline" data-aos="fade-up">
+            <img src="Images/PRODUCT/Products.jpg" alt="Therapy products for mental wellness" loading="lazy">
+            <h1 class="headline">Professional-Grade Mental Health Products for Your Wellness Journey</h1>
+        </section>
 
-    <!-- PRODUCTS -->
-    <!-- Self-Help & Wellness Products -->
-    <div class="main-heading" data-aos="fade-up" id="journals">
-        <h1>"Self-Help & Wellness Products"</h1>
-    </div>
+        <!-- Self-Help & Wellness Products -->
+        <section class="main-heading" data-aos="fade-up" id="journals">
+            <h2>Therapy Journals & Self-Help Tools</h2>
+            <p class="section-description text-center fs-3 text-success">Our curated collection of journals and workbooks designed to support your mental health journey</p>
+        </section>
 
-    <div class="products" data-aos="fade-up">
+        <section class="products" data-aos="fade-up">
+            <div class="product-grid">
+                <div class="product-card" data-aos="fade-up" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/WELLNESS-PRODUCTS/ITEMS/daily-mental-wellness-planner.webp" alt="Daily mental wellness planner with prompts" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-01.html">Mental Wellness Planner</a></div>
+                    <meta itemprop="description" content="Daily planner with mental health prompts and mood tracking">
+                </div>
 
-        <div class="product-grid">
-            <div class="product-card" data-aos="fade-up">
-                <img src="Images/WELLNESS-PRODUCTS/ITEMS/daily-mental-wellness-planner.webp" alt="Wellness Planner"
-                    loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-01.html" >Mental
-                        Wellness Planner</a></div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/WELLNESS-PRODUCTS/ITEMS/gratitude-journal.webp" alt="5-minute gratitude journal with gold foil details" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-02.html">5-Minute Gratitude Journal</a></div>
+                    <meta itemprop="description" content="Quick daily gratitude practice journal with prompts">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/WELLNESS-PRODUCTS/ITEMS/CBT-workbook.webp" alt="CBT workbook for anxiety management" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-03.html">CBT Workbook for Anxiety</a></div>
+                    <meta itemprop="description" content="Cognitive Behavioral Therapy exercises for anxiety relief">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/WELLNESS-PRODUCTS/ITEMS/affirmation-cards.webp" alt="Colorful self-love affirmation cards" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-04.html">Self-Love Affirmation Cards</a></div>
+                    <meta itemprop="description" content="52 positive affirmation cards for daily self-love practice">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/WELLNESS-PRODUCTS/ITEMS/mindfulness-journal.webp" alt="Mindfulness reflection journal with pen" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-05.html">Mindfulness Reflection Journal</a></div>
+                    <meta itemprop="description" content="Guided journal for developing mindfulness practice">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="600" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/WELLNESS-PRODUCTS/ITEMS/motivational-cards.webp" alt="Set of inspirational quote cards" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-06.html">Motivational Quote Cards</a></div>
+                    <meta itemprop="description" content="100 inspirational quote cards for daily motivation">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="700" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/WELLNESS-PRODUCTS/ITEMS/stress-recovery-book.webp" alt="Stress recovery workbook with exercises" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-07.html">Stress Recovery Workbook</a></div>
+                    <meta itemprop="description" content="Step-by-step guide to recovering from chronic stress">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="800" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/WELLNESS-PRODUCTS/ITEMS/habit-tracker.webp" alt="Happiness habit tracker journal" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-08.html">Happiness Habit Tracker</a></div>
+                    <meta itemprop="description" content="90-day tracker for developing positive mental health habits">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="800" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/WELLNESS-PRODUCTS/ITEMS/messages-in-a-bottle.webp" alt="Positive messages in a decorative bottle" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-09.html">Positive Messages in a Bottle</a></div>
+                    <meta itemprop="description" content="100 uplifting messages for daily encouragement">
+                </div>
             </div>
+        </section>
 
-            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="Images/WELLNESS-PRODUCTS/ITEMS/gratitude-journal.webp" alt="Gratitude Journal" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-02.html"
-                        >5-Minute
-                        Gratitude Journal</a></div>
+        <!-- Relaxation & Stress Relief Products -->
+        <section class="main-heading" data-aos="fade-up" id="relaxation">
+            <h2>Relaxation & Stress Relief Tools</h2>
+            <p class="section-description text-center fs-3 text-success">Scientifically-backed products to help you unwind, de-stress, and find calm</p>
+        </section>
+
+        <section class="products" data-aos="fade-up">
+            <div class="product-grid">
+                <div class="product-card" data-aos="fade-up" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/RELAXATION-PRODUCTS/ITEMS/lavendar-oil.webp" alt="Lavender and chamomile essential oil set" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-10.html">Lavender & Chamomile Oil</a></div>
+                    <meta itemprop="description" content="Pure essential oils for relaxation and sleep support">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/RELAXATION-PRODUCTS/ITEMS/weighted-blanket.webp" alt="15 lb weighted blanket for anxiety" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-11.html">Weighted Blanket (15 lbs)</a></div>
+                    <meta itemprop="description" content="Therapeutic weighted blanket for anxiety relief">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/RELAXATION-PRODUCTS/ITEMS/stress-balls.webp" alt="Set of three calming stress balls" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-12.html">Calming Stress Ball Set</a></div>
+                    <meta itemprop="description" content="Ergonomic stress balls for tension relief">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/RELAXATION-PRODUCTS/ITEMS/fidget-cube.webp" alt="Multi-sided fidget cube for anxiety" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-13.html">Fidget Cube for Anxiety Relief</a></div>
+                    <meta itemprop="description" content="6-sided fidget tool for nervous energy">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/RELAXATION-PRODUCTS/ITEMS/music-pack.webp" alt="Relaxation music MP3 download package" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-14.html">Relaxation Music MP3 Pack</a></div>
+                    <meta itemprop="description" content="10 hours of calming music for stress relief">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="600" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/RELAXATION-PRODUCTS/ITEMS/oil-diffuser.webp" alt="Ultrasonic essential oil diffuser" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-15.html">Essential Oil Diffuser</a></div>
+                    <meta itemprop="description" content="Whisper-quiet aromatherapy diffuser with color changing lights">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="700" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/RELAXATION-PRODUCTS/ITEMS/eye-mask.webp" alt="Heated eye mask for relaxation" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-16.html">Heated Eye Mask</a></div>
+                    <meta itemprop="description" content="Soothing heated mask for tension relief">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="800" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/RELAXATION-PRODUCTS/ITEMS/bath-bomb.jpg" alt="Set of three aromatherapy bath bombs" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-17.html">Aromatherapy Bath Bomb Set</a></div>
+                    <meta itemprop="description" content="Luxury bath bombs with essential oils for relaxation">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="800" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/RELAXATION-PRODUCTS/ITEMS/mat-and-pillow.webp" alt="Acupressure mat and pillow set" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-18.html">Acupressure Mat & Pillow Set</a></div>
+                    <meta itemprop="description" content="Therapeutic acupressure set for muscle tension relief">
+                </div>
             </div>
+        </section>
 
-            <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="Images/WELLNESS-PRODUCTS/ITEMS/CBT-workbook.webp" alt="Anxiety Workbook" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-03.html" >CBT
-                        Workbook for
-                        Anxiety</a></div>
+        <!-- Therapy Aids & Resources -->
+        <section class="main-heading" data-aos="fade-up" id="resources">
+            <h2>Therapeutic Resources & Tools</h2>
+            <p class="section-description text-center fs-3 text-success">Professional-grade therapy aids recommended by mental health practitioners</p>
+        </section>
+
+        <section class="products" data-aos="fade-up">
+            <div class="product-grid">
+                <div class="product-card" data-aos="fade-up" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/THERAPY-AIDS/ITEMS/CBT-flashcards.webp" alt="CBT therapy flashcards set" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-19.html">CBT Therapy Flashcards</a></div>
+                    <meta itemprop="description" content="50 cognitive behavioral therapy exercise cards">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/THERAPY-AIDS/ITEMS/DBT-workbook.webp" alt="DBT skills workbook cover" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-20.html">DBT Skills Workbook</a></div>
+                    <meta itemprop="description" content="Dialectical Behavior Therapy techniques for emotional regulation">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/THERAPY-AIDS/ITEMS/sensory-grounding-kit.webp" alt="Sensory grounding toolkit items" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-21.html">Sensory Grounding Kit</a></div>
+                    <meta itemprop="description" content="Portable kit for anxiety and panic attack relief">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/THERAPY-AIDS/ITEMS/therapy-cards.webp" alt="Therapy conversation starter cards" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-22.html">Conversation Starter Cards</a></div>
+                    <meta itemprop="description" content="100 prompts for meaningful therapeutic discussions">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/THERAPY-AIDS/ITEMS/coloring-book.webp" alt="Mindfulness coloring book open page" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-23.html">Mindfulness Coloring Book</a></div>
+                    <meta itemprop="description" content="Intricate designs for meditative coloring practice">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="600" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/THERAPY-AIDS/ITEMS/fidget-kit.webp" alt="Assortment of tactile fidget tools" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-24.html">Tactile Fidget Kit for Anxiety</a></div>
+                    <meta itemprop="description" content="Variety pack of sensory fidget tools">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="700" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/THERAPY-AIDS/ITEMS/progress-tracker.webp" alt="Therapy progress tracker journal" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-25.html">Therapy Progress Tracker</a></div>
+                    <meta itemprop="description" content="Organizer for tracking mental health goals and growth">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="800" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/THERAPY-AIDS/ITEMS/healing-workbook.webp" alt="Trauma healing workbook cover" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-26.html">Trauma Healing Workbook</a></div>
+                    <meta itemprop="description" content="Gentle exercises for trauma recovery">
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="900" itemscope itemtype="https://schema.org/Product">
+                    <img src="Images/THERAPY-AIDS/ITEMS/soothing-kit.webp" alt="Self-soothing toolkit components" loading="lazy" itemprop="image">
+                    <div class="product-title" itemprop="name"><a href="OtherPages/PRODUCTS DETAILS/product-27.html">Self-Soothing Toolkit</a></div>
+                    <meta itemprop="description" content="Complete kit for emotional regulation techniques">
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="product-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="Images/WELLNESS-PRODUCTS/ITEMS/affirmation-cards.webp" alt="Affirmation Cards" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-04.html"
-                        >Self-Love
-                        Affirmation Cards</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="400">
-                <img src="Images/WELLNESS-PRODUCTS/ITEMS/mindfulness-journal.webp" alt="Reflection Journal"
-                    loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-05.html"
-                        >Mindfulness
-                        Reflection Journal</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="600">
-                <img src="Images/WELLNESS-PRODUCTS/ITEMS/motivational-cards.webp" alt="Quote Cards" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-06.html"
-                        >Motivational
-                        Quote Cards</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="700">
-                <img src="Images/WELLNESS-PRODUCTS/ITEMS/stress-recovery-book.webp" alt="Recovery Workbook"
-                    loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-07.html" >Stress
-                        Recovery
-                        Workbook</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="800">
-                <img src="Images/WELLNESS-PRODUCTS/ITEMS/habit-tracker.webp" alt="Habit Tracker" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-08.html"
-                        >Happiness Habit
-                        Tracker</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="800">
-                <img src="Images/WELLNESS-PRODUCTS/ITEMS/messages-in-a-bottle.webp" alt="Positive Messages"
-                    loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-09.html"
-                        >Positive Messages
-                        in a Bottle</a></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Relaxation & Stress Relief Products -->
-    <div class="main-heading" data-aos="fade-up" id="relaxation">
-        <h1>"Relaxation & Stress Relief Products"</h1>
-    </div>
-
-    <div class="products" data-aos="fade-up">
-
-        <div class="product-grid">
-            <div class="product-card" data-aos="fade-up">
-                <img src="Images/RELAXATION-PRODUCTS/ITEMS/lavendar-oil.webp" alt="Essential Oil" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-10.html"
-                        >Lavender &
-                        Chamomile Oil</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="Images/RELAXATION-PRODUCTS/ITEMS/weighted-blanket.webp" alt="Weighted Blanket" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-11.html"
-                        >Weighted Blanket
-                        (15 lbs)</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="Images/RELAXATION-PRODUCTS/ITEMS/stress-balls.webp" alt="Stress Ball" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-12.html" >Calming
-                        Stress
-                        Ball Set</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="Images/RELAXATION-PRODUCTS/ITEMS/fidget-cube.webp" alt="Fidget Cube" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-13.html" >Fidget
-                        Cube for
-                        Anxiety Relief</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="400">
-                <img src="Images/RELAXATION-PRODUCTS/ITEMS/music-pack.webp" alt="Music MP3 Pack" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-14.html"
-                        >Relaxation Music
-                        MP3 Pack</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="600">
-                <img src="Images/RELAXATION-PRODUCTS/ITEMS/oil-diffuser.webp" alt="Oil Diffuser" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-15.html"
-                        >Essential Oil
-                        Diffuser</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="700">
-                <img src="Images/RELAXATION-PRODUCTS/ITEMS/eye-mask.webp" alt="Eye Mask" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-16.html" >Heated
-                        Eye
-                        Mask</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="800">
-                <img src="Images/RELAXATION-PRODUCTS/ITEMS/bath-bomb.jpg" alt="Bath Bomb" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-17.html"
-                        >Aromatherapy Bath
-                        Bomb Set</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="800">
-                <img src="Images/RELAXATION-PRODUCTS/ITEMS/mat-and-pillow.webp" alt="Acupressure Mat" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-18.html"
-                        >Acupressure Mat &
-                        Pillow Set</a></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Therapy Aids & Resources -->
-    <div class="main-heading" data-aos="fade-up" id="resources">
-        <h1>"Therapy Aids & Resources"</h1>
-    </div>
-
-    <div class="products" data-aos="fade-up">
-
-        <div class="product-grid">
-            <div class="product-card" data-aos="fade-up">
-                <img src="Images/THERAPY-AIDS/ITEMS/CBT-flashcards.webp" alt="CBT Therapy Flashcards" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-19.html" >CBT
-                        Therapy
-                        Flashcards</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="Images/THERAPY-AIDS/ITEMS/DBT-workbook.webp" alt="DBT Skills Workbook" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-20.html" >DBT
-                        Skills
-                        Workbook</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="Images/THERAPY-AIDS/ITEMS/sensory-grounding-kit.webp" alt="Grounding Kit" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-21.html" >Sensory
-                        Grounding
-                        Kit</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="Images/THERAPY-AIDS/ITEMS/therapy-cards.webp" alt="Starter Cards" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-22.html"
-                        >Conversation
-                        Starter Cards</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="400">
-                <img src="Images/THERAPY-AIDS/ITEMS/coloring-book.webp" alt="Adult Coloring Book" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-23.html"
-                        >Mindfulness
-                        Coloring Book</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="600">
-                <img src="Images/THERAPY-AIDS/ITEMS/fidget-kit.webp" alt="Fidget Kit" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-24.html" >Tactile
-                        Fidget
-                        Kit for Anxiety</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="700">
-                <img src="Images/THERAPY-AIDS/ITEMS/progress-tracker.webp" alt="Progress Tracker" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-25.html"
-                        >Progress
-                        Tracker</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="800">
-                <img src="Images/THERAPY-AIDS/ITEMS/healing-workbook.webp" alt="Trauma Healing Workbook" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-26.html" >Trauma
-                        Healing
-                        Workbook</a></div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="900">
-                <img src="Images/THERAPY-AIDS/ITEMS/soothing-kit.webp" alt="Self-Soothing Toolkit" loading="lazy">
-                <div class="product-title"><a href="OtherPages/PRODUCTS DETAILS/product-27.html"
-                        >Self-Soothing
-                        Toolkit</a></div>
-            </div>
-        </div>
-    </div>
-    <!----------------------Footer start------------------------>
-    <footer>
+    <!---------------------- Footer ------------------------>
+    <footer role="contentinfo">
         <div class="footer-container">
             <div class="foot">
                 <div class="footer-logo">
-                    <img src="Images/Zara-Logo.png" alt="footer logo">
-                    <p>We provide professional therapy services to help you achieve mental well-being.</p>
-                    <p><strong>Our Approach:</strong> Holistic & Evidence-Based Therapy</p>
-
+                    <img src="Images/Zara-Logo.png" alt="Zara Therapy Clinic Logo - Professional Mental Health Services">
+                    <p>We provide professional therapy and counseling services to help you achieve mental well-being and emotional health.</p>
+                    <p><strong>Our Approach:</strong>Holistic & Evidence-Based, Client-Centered Therapy</p>
                 </div>
+                
                 <div class="useful-links">
-                    <h2>Useful-links</h2>
+                    <h3 class="h4">Therapy Resources</h3>
                     <ul class="ps-0">
-                        <li><a href="OtherPages/blog.html" >Blogs</a></li>
-                        <li><a href="OtherPages/Termsandcondition.html" >Terms and conditions</a></li>
-                        <li><a href="OtherPages/fees.html" >Fees</a></li>
-                        <li><a href="OtherPages/privacypolicy.html" >Privacy policy</a></li>
-                        <li><a href="OtherPages/FAQ.html" >FAQ's</a></li>
+                        <li><a href="OtherPages/blog.html">Mental Health Blog</a></li>
+                        <li><a href="OtherPages/Termsandcondition.html">Terms and Conditions</a></li>
+                        <li><a href="OtherPages/fees.html">Therapy Fees</a></li>
+                        <li><a href="OtherPages/privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="OtherPages/FAQ.html">Therapy FAQs</a></li>
                     </ul>
                 </div>
 
                 <div class="contact-details">
-                    <h2>Contact Us</h2>
-                    <p class="con-p"><strong>Phone:</strong> +123 456 7890</p>
-                    <p><strong>Email:</strong> contact@zaratherapy.com</p>
-                    <p><strong>Location:</strong> 123 Therapy Street, City</p>
+                    <h3 class="h4">Clinic Info</h3>
+                    <p><strong>Phone:</strong>+123 456 7890</a></p>
+                    <p><strong>Email:</strong>contact@zaratherapy.com</a></p>
+                    <p><strong>Location:</strong> 123 Therapy Street, Pakistan</p>
+                    <p><strong>Hours:</strong> Mon-Fri: 9am-7pm, Sat: 10am-4pm</p>
+                    
                     <div class="social-link">
+                        <h4 class="h5">Join Our Community</h4>
                         <ul class="ps-0">
-                            <li><a href="https://www.facebook.com/" target="_blank"><i
-                                        class="fa-brands fa-facebook"></i></a>
-                            </li>
-                            <li><a href="https://www.instagram.com/" target="_blank" ><i
-                                        class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="https://telegram.me/yourusername" target="_blank"><i
-                                        class="fa-brands fa-telegram"></i></a></li>
-                            <li><a href="https://www.twitter.com/" target="_blank"><i
-                                        class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://telegram.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a></li>
+                            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
+                
                 <div class="connected">
-                    <h2>Stay connected</h2>
-                    <p>Subscribe to our newsletter for updates</p>
+                    <h3 class="h4">Stay Connected</h3>
+                    <p>Subscribe to our mental health newsletter for therapy tips and updates</p>
                     <div class="foot-input">
                         <input type="email" class="f-email" placeholder="Enter your email here">
                         <input type="submit" class="f-submit">
@@ -372,25 +415,37 @@
                                 Us</a></button>
                     </div>
                 </div>
-
             </div>
+            
             <div class="footer-botm">
-                <p>&copy; 2025 <strong> Zara Therapy Clinic.</strong> All rights reserved.</p>
+                <p>&copy; 2025 <strong>Zara Therapy Clinic.</strong> All rights reserved. | <a href="OtherPages/privacypolicy.html" class="text-decoration-none text-secondary">Privacy Policy</a> | <a href="OtherPages/Termsandcondition.html" class="text-decoration-none text-secondary">Terms of Service</a></p>
             </div>
         </div>
     </footer>
-    <!----------------------Footer complete------------------------>
 
 
-
-    <!-- AOS LIBRARY JS -->
+    <!----------------------- JavaScript ----------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- MY JS -->
     <script src="JS/About.js"></script>
-</body>
+    
+    <script>
+        // Initialize AOS animation
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
 
+        // Product click tracking (example)
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const productName = this.querySelector('.product-title').textContent;
+                console.log(`Product viewed: ${productName}`);
+                // In a real implementation, you would send this data to analytics
+            });
+        });
+    </script>
+</body>
 </html>
